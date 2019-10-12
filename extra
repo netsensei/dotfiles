@@ -1,0 +1,4 @@
+# Plenv
+if command -v plenv >/dev/null 2&>1; then
+  eval "$(plenv init -)"
+fi
