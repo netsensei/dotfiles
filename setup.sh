@@ -25,7 +25,7 @@ function link () {
   if [[ -e $HOME/$1 ]] && [[ ! -h $HOME/$1 ]];then
     echo "Backing up ${HOME}/$1."
 
-    cp $HOME/$1 $HOME/"$1.bak"
+    mv $HOME/$1 $HOME/"$1.bak"
   fi
 
   # Create a symlink
