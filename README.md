@@ -16,7 +16,7 @@ cd .dotfiles
 ... or run it through curl/bash if you're wild:
 
 ```bash
-curl -k -L https://raw.githubusercontent.com/netsensei/dotfiles/master/setup.sh | sudo bash
+curl -k -L https://raw.githubusercontent.com/netsensei/dotfiles/master/setup.sh | bash
 ```
 
 The setup script will make a backup of existing dotfiles, and create symlinks to the packaged dotfiles.
