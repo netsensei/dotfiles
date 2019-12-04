@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# Shell prompt based on the Solarized Dark theme.
-# Screenshot: http://i.imgur.com/EkEtphC.png
+# Shell prompt based on the Gruvbox Dark theme.
+# See: https://github.com/dawikur/base16-gruvbox-scheme
+#
 # Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
 # iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
 
@@ -61,21 +62,39 @@ prompt_git() {
 	fi;
 }
 
+# Hex 2 Ansi-256 color codes
+#
+# 1d2021 016 # ---- light blue
+# 3c3836 016 # ---  light blue
+# 504945 052 # --   light green
+# 665c54 059 # -    dark green
+# bdae93 144 # +    dark brown
+# d5c4a1 187 # ++   light brown
+# ebdbb2 223 # +++  light orange
+# fbf1c7 230 # ++++ light yellow
+# fb4934 196 #      red
+# fe8019 208 #      orange
+# fabd2f 214 #      yellow
+# b8bb26 142 #      green
+# 8ec07c 108 #      aqua/cyan
+# 83a598 109 #      blue
+# d3869b 175 #      purple
+# d65d0e 166 #      brown
+
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
 	bold=$(tput bold);
 	reset=$(tput sgr0);
-	# Solarized colors, taken from http://git.io/solarized-colors.
+	# Grubbox colors, taken from https://github.com/dawikur/base16-gruvbox-scheme
 	black=$(tput setaf 0);
-	blue=$(tput setaf 33);
-	cyan=$(tput setaf 37);
-	green=$(tput setaf 64);
-	orange=$(tput setaf 166);
-	purple=$(tput setaf 125);
-	red=$(tput setaf 124);
-	violet=$(tput setaf 61);
+	blue=$(tput setaf 109);
+	cyan=$(tput setaf 108);
+	green=$(tput setaf 142);
+	orange=$(tput setaf 208);
+	purple=$(tput setaf 175);
+	red=$(tput setaf 196);
 	white=$(tput setaf 15);
-	yellow=$(tput setaf 136);
+	yellow=$(tput setaf 214);
 else
 	bold='';
 	reset="\e[0m";
@@ -86,7 +105,6 @@ else
 	orange="\e[1;33m";
 	purple="\e[1;35m";
 	red="\e[1;31m";
-	violet="\e[1;35m";
 	white="\e[1;37m";
 	yellow="\e[1;33m";
 fi;
@@ -113,7 +131,7 @@ PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
-PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_git \"\[${white}\] on \[${blue}\]\" \"\[${cyan}\]\")"; # Git repository details
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
