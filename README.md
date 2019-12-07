@@ -31,6 +31,7 @@ for inspiration.
 I drew inspiration from different sources to create my own dotfiles:
 
 * [Matthias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [Simon Owen's dotfiles](https://github.com/s10wen/dotfiles)
 * [Dotfiles on Github](https://dotfiles.github.io/)
 * [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 
