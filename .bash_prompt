@@ -62,16 +62,17 @@ prompt_git() {
 	fi;
 }
 
+
 # Hex 2 Ansi-256 color codes
 #
-# 1d2021 016 # ---- light blue
-# 3c3836 016 # ---  light blue
-# 504945 052 # --   light green
-# 665c54 059 # -    dark green
-# bdae93 144 # +    dark brown
+# 1d2021 016 # ---- darkest black
+# 3c3836 016 # ---  darker black
+# 504945 052 # --   dark black
+# 665c54 059 # -    black
+# bdae93 144 # +    brown
 # d5c4a1 187 # ++   light brown
-# ebdbb2 223 # +++  light orange
-# fbf1c7 230 # ++++ light yellow
+# ebdbb2 223 # +++  lighter brown
+# fbf1c7 230 # ++++ lightest brown
 # fb4934 196 #      red
 # fe8019 208 #      orange
 # fabd2f 214 #      yellow
@@ -133,7 +134,7 @@ PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${blue}\]\" \"\[${cyan}\]\")"; # Git repository details
 PS1+="\n";
-PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+PS1+="\[${yellow}\]⚡ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${yellow}\]→ \[${reset}\]";
