@@ -3,9 +3,14 @@
 # Make vim the default editor.
 export EDITOR='vim';
 
+# Set the XDG Base config directory to the default folder
+# see: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+export XDG_CONFIG_HOME=$HOME/.config
+
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
+
 
 # Get color support for 'less'
 export LESS="--RAW-CONTROL-CHARS"
