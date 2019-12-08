@@ -16,7 +16,7 @@ fi
 
 # Go symlinkin'
 
-FILES=$(git ls-files -- . ':!:*.md' ':!:*.sh')
+FILES=$(git ls-files -- . ':!:*.md' ':!:*.sh' ':!:nvim')
 
 function link () {  
   
