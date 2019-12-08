@@ -5,7 +5,7 @@ set -e
 
 # Git clone this project
 
-REPO=${REPO:-git://github.com/netsensei/dotfiles.git}
+REPO=${REPO:-https://github.com/netsensei/dotfiles.git}
 BASEDIR=${CLONE_DIR:-"${HOME}"/.dotfiles}
 
 if [[ ! -d $BASEDIR ]];then
