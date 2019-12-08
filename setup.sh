@@ -47,4 +47,6 @@ for file in $FILES; do
   link $file
 done;
 
+source $BASEDIR/scripts/vim.sh
+
 echo "Done!"
