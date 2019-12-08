@@ -1,0 +1,36 @@
+[user]
+	name = Matthias Vandermaesen
+	email = matthias.vandermaesen@gmail.com
+
+[alias]
+	blame = blame --abbrev=6
+	ctags = !.git/hooks/ctags
+	ff = -c "merge.defaultToUpstream=true" merge --ff-only
+	fff = pull --ff-only
+	subup = submodule update --init --recursive
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[color]
+	ui = auto
+
+[column]
+	ui = auto,dense
+
+[diff]
+	submodule = log
+	word-diff = color
+	compactionHeuristic = true
+
+[push]
+	default = simple
+
+[rebase]
+	autosquash = true
+
+[submodule]
+	fetchJobs = 4
+
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+	insteadOf = git@github.com:
+	insteadOf = http://github.com/
