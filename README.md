@@ -3,6 +3,10 @@
 > Everything should be made as simple as possible, but not simpler
 -- Albert Einstein
 
+These are my dotfiles. Opinionated defaults for my workstations.
+
+![Screenshot of terminal](https://raw.githubusercontent.com/netsensei/dotfiles/assets/screenshot.png)
+
 ## Installation
 
 Either clone or download the repo and run the setup.sh script:
