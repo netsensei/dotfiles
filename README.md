@@ -49,4 +49,4 @@ I drew inspiration from different sources to create my own dotfiles:
 
 ## License
 
-The MIT License (MIT). Please see [Licensei](LICENSE.md) File for more information.
+The MIT License (MIT). Please see [License](LICENSE.md) File for more information.
