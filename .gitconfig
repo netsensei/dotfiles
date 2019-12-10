@@ -1,5 +1,5 @@
 [user]
-	name = Matthias Vandermaesen
+	name = netsensei
 	email = matthias.vandermaesen@gmail.com
 
 [alias]
@@ -30,7 +30,7 @@
 [submodule]
 	fetchJobs = 4
 
-[url "https://github.com/"]
+[url "git@github.com:"]
 	insteadOf = git://github.com/
-	insteadOf = git@github.com:
+	insteadOf = https://github.com/
 	insteadOf = http://github.com/
