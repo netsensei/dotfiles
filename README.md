@@ -5,7 +5,7 @@
 
 These are my dotfiles. Opinionated defaults for my workstations.
 
-![Screenshot of terminal](https://raw.githubusercontent.com/netsensei/dotfiles/assets/screenshot.png)
+<img src="https://raw.githubusercontent.com/netsensei/dotfiles/assets/screenshot.png" width="864" />
 
 ## Installation
 
