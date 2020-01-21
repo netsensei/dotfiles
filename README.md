@@ -1,11 +1,11 @@
 ## Dotfiles
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 > Everything should be made as simple as possible, but not simpler
 -- Albert Einstein
 
 These are my dotfiles. Opinionated defaults for my workstations.
-
-<img src="https://raw.githubusercontent.com/netsensei/dotfiles/assets/screenshot.png" width="864" />
 
 ## Installation
 
