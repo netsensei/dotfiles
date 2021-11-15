@@ -35,5 +35,8 @@
 	insteadOf = https://github.com/
 	insteadOf = http://github.com/
 
+[init]
+	defaultBranch = main
+
 [core]
 	editor = /usr/bin/nvim
