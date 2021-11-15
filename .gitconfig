@@ -35,6 +35,8 @@
 	insteadOf = https://github.com/
 	insteadOf = http://github.com/
 
+[credential]
+	helper = store
 [init]
 	defaultBranch = main
 
