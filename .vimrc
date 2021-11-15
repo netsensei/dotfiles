@@ -13,6 +13,16 @@ set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
 set nomodeline
 
+" tabstop:          Width of tab character
+" softtabstop:      Fine tunes the amount of white space to be added
+" shiftwidth        Determines the amount of whitespace to add in normal mode
+" expandtab:        When this option is enabled, vi will use spaces instead of
+"                   tabs
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 " vim-plug plugins
 call plug#begin()
 Plug 'tpope/vim-sensible'
