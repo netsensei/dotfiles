@@ -34,3 +34,6 @@
 	insteadOf = git://github.com/
 	insteadOf = https://github.com/
 	insteadOf = http://github.com/
+
+[core]
+	editor = /usr/bin/nvim
