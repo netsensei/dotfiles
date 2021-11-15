@@ -33,7 +33,7 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Airline
-let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_theme='raven'
 
 " Numbers
 set number
